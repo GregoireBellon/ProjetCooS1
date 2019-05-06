@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Character {
 	
+	
 	protected String name; 
 	protected int hp; //life
 	
