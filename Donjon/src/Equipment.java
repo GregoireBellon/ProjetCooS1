@@ -7,7 +7,9 @@ public class Equipment {
 		this.name = name;
 	}
 	
-	public void equip() {
+	public void equip(Character c) {
 		
+		c.equipment_list.add(this);
+	
 	}
 }
