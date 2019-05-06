@@ -3,8 +3,8 @@ public class Dungeon {
 	
 	Room map[][] = new Room[100][100];
 	
-	Dungeon() {
-		
+	Dungeon(int x,int y) {
+		GenerateRoom(x,y,5);
 	}
 	
 	public void GenerateRoom(int x,int y,int direction) {
