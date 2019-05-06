@@ -8,7 +8,6 @@ public class MainCharacter extends Character{
 	 */
 	protected int Position[] = new int[2];
 	
-	
 	public MainCharacter(String name, int[] Position) {
 		super(name, 100);
 		
@@ -26,6 +25,12 @@ public class MainCharacter extends Character{
 	
 	public void moove(){
 		
+	}
+	
+	public void getPosition() {
+		System.out.println("x :"+Position[0]);
+		System.out.println("y :"+Position[1]);
+
 	}
 	
 	
