@@ -23,8 +23,27 @@ public class MainCharacter extends Character{
 		return false;
 	}
 	
-	public void moove(){
-		
+	public void move(Dungeon place, int direction){
+		switch(direction) {
+		case 0 :
+			this.Position[1]--;
+			place.GenerateRoom(this.Position[0], this.Position[1], direction);
+			break;
+		case 1 :
+			this.Position[0]++;
+			place.GenerateRoom(this.Position[0], this.Position[1], direction);
+			break;
+		case 2 :
+			this.Position[1]++;
+			place.GenerateRoom(this.Position[0], this.Position[1], direction);
+			break;
+		case 3 :
+			this.Position[0]--;
+			place.GenerateRoom(this.Position[0], this.Position[1], direction);
+			break;
+		default :
+			return;
+		}
 	}
 	
 	public void getPosition() {
