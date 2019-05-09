@@ -9,7 +9,6 @@ public class Equipment {
 	
 	public void equip(Character c) {
 		
-		
 		c.equipment_list.add(this);
 	
 	}
@@ -19,4 +18,9 @@ public class Equipment {
 			equip(c);
 		}
 	}
+
+	public String getName() {
+		return name;
+	}
+
 }
