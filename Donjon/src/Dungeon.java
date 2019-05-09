@@ -8,7 +8,9 @@ public class Dungeon {
 	}
 	
 	public void GenerateRoom(int x,int y,int direction) {
-		map[x][y] = new Room(x,y,direction);
+		if (map[x][y] == null) {
+			map[x][y] = new Room(x,y,direction);
+		}
 	}
 	
 	public Room GetRoom(int x,int y) {

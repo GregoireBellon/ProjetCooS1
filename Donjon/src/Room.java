@@ -7,7 +7,7 @@ public class Room {
 	/**
 	 * Every boolean stands for a door (in order: North,East,South,West), True if there is a door, false if not
 	 */
-	private boolean Door[] = new boolean[4]; 
+	private boolean Door[] = new boolean[4];
 	
 	
 	/**
@@ -47,10 +47,9 @@ public class Room {
 	}
 
 
-	public boolean[] getDoor() {
-		return Door;
+	public boolean getDoor(int i) {
+		return Door[i];
 	}
-	
 	
 	
 }

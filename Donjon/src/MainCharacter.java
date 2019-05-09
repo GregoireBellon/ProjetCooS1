@@ -49,7 +49,14 @@ public class MainCharacter extends Character{
 	public void getPosition() {
 		System.out.println("x :"+Position[0]);
 		System.out.println("y :"+Position[1]);
-
+	}
+	
+	public int getPositionX() {
+		return Position[0];
+	}
+	
+	public int getPositionY() {
+		return Position[1];
 	}
 	
 	
