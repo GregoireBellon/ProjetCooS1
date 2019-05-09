@@ -8,8 +8,10 @@ public class Main {
 		int depart[] = new int[2];
 		depart[0] = 50;
 		depart[1] = 50;
+		Weapon Dagger = new Weapon("dagger",6);
 		
-		MainCharacter Karen = new MainCharacter("Karen", depart );
+		
+		MainCharacter Karen = new MainCharacter("Karen", depart,Dagger);
 		Dungeon D = new Dungeon(50,50);
 		
 		while (true){

@@ -1,0 +1,10 @@
+
+Fsquid:S1220""Move this file to a named package.HVRMINORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(Èì¶ø8åÀ∆ä©-HWRMAJORZ
+CODE_SMELL
+Çsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÃ…Â8åÀ∆ä©-HXRMINORZ
+CODE_SMELL
+çsquid:S00116"YRename this field "equipment_list" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Ú©´8åÀ∆ä©-HYRMINORZ
+CODE_SMELL

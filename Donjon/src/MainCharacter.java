@@ -8,8 +8,8 @@ public class MainCharacter extends Character{
 	 */
 	protected int Position[] = new int[2];
 	
-	public MainCharacter(String name, int[] Position) {
-		super(name, 100);
+	public MainCharacter(String name, int[] Position, Weapon weapon) {
+		super(name, 100, weapon);
 		
 		this.Position[0]=Position[0];
 		this.Position[1]=Position[1];
@@ -58,6 +58,5 @@ public class MainCharacter extends Character{
 	public int getPositionY() {
 		return Position[1];
 	}
-	
 	
 }

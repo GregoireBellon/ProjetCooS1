@@ -1,0 +1,23 @@
+
+ksquid:S1197"8Move the array designator from the variable to the type.(â§¸è8ÿƒ‚‹©-HwRMINORZ
+CODE_SMELL
+^squid:S1481"&Remove this unused "D" local variable.(ÍèŞêûÿÿÿÿ8ôæÇä¨-H~RMINORZ
+CODE_SMELL
+Fsquid:S1220""Move this file to a named package.H|RMINORZ
+CODE_SMELL
+Šsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍèŞêûÿÿÿÿ8ôæÇä¨-HyRMINORZ
+CODE_SMELL
+msquid:S1854"5Remove this useless assignment to local variable "D".(ÍèŞêûÿÿÿÿ8ôæÇä¨-HzRMAJORZ
+CODE_SMELL
+]squid:S1481
+"*Remove this unused "Karen" local variable.(¹Æ¶Á8ÿƒ‚‹©-H}RMINORZ
+CODE_SMELL
+lsquid:S1854
+"9Remove this useless assignment to local variable "Karen".(¹Æ¶Á8ÿƒ‚‹©-HxRMAJORZ
+CODE_SMELL
+…squid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Æ¶Á8ÿƒ‚‹©-H{RMINORZ
+CODE_SMELL
+Vsquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8úõŞÜ©-HRBLOCKERZBUG
+csquid:S00108")Either remove or fill this block of code.(˜ïˆÿÿÿÿÿ8úõŞÜ©-H‚RMAJORZ
+CODE_SMELL
