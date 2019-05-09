@@ -1,4 +1,4 @@
 
 public enum EventType {
-	MONSTER,CHEST,OTHER;
+	MONSTER,CHEST,OTHER,NULL;
 }
