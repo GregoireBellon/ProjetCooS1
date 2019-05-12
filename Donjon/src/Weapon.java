@@ -12,4 +12,10 @@ public class Weapon extends Equipment {
 		return pa;
 	}
 	
+	@Override
+	public String toString() {
+		
+		return super.getName()+"  //  Damages :"+pa;
+	}
+	
 }

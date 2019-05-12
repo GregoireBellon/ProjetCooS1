@@ -7,14 +7,14 @@ public class Skeleton extends Character implements Enemy{
 	}
 
 	public void attack(MainCharacter mainchar) {
-		
+		//mainchar.interact();
 	}
 
 	@Override
-	public void interact() {
+	public void interact(int damages) {
 
 		
-		
+
 	}
 
 }

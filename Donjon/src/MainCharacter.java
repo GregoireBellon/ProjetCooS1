@@ -1,7 +1,7 @@
 
 public class MainCharacter extends Character{
 	
-	protected Bag actual_bag;
+	protected Bag actual_bag= new Bag("GROSAC", 100);
 	
 	/**
 	 * Position[0] = x,  Position[1] = y
@@ -21,6 +21,13 @@ public class MainCharacter extends Character{
 			return true;
 		}
 		return false;
+	}
+	
+	@Override
+	public void interact(int damages) {
+		
+		
+		
 	}
 	
 	public void move(Dungeon place, int direction){

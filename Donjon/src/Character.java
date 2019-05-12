@@ -1,22 +1,21 @@
 import java.util.ArrayList;
 
 public class Character {
-	
-	
+
 	protected String name; 
 	protected int hp; //life
-	protected int hp_max; //max life
-	
+	protected int hp_max=100; //max life
 	
 	/**
 	 * List of everything the character has
 	 */
-	protected ArrayList<Equipment> equipment_list; 
+	public ArrayList<Equipment> equipment_list= new ArrayList<Equipment>(); 
 	
 	public Character(String name, int hp, Weapon weapon) {
 		
 		this.name = name;
 		this.hp = hp;
+		equipment_list.add(weapon);
 	}
 	
 	/**
@@ -56,5 +55,31 @@ public class Character {
 		}
 		return;
 	}
+	
+	@Override
+	public String toString() {
+
+		String line;
+		
+		line="Name : "+name+"\n";
+		line=line+"Hp : "+hp+"\n";
+		line=line+"Hp max : "+hp_max+"\n";
+		line=line+"Equipment : \n";
+		
+		for(Equipment frag : equipment_list){
+		
+			line=line+"- "+frag.toString()+"\n";
+
+		}
+		
+		return line;
+	}
+	
+	public void interact(int damages) {};
+	public void attack(int damages, Character c) {
+		c.interact(damages);
+	}
+
+	
 	
 }

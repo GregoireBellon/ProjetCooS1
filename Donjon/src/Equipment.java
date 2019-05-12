@@ -15,12 +15,21 @@ public class Equipment {
 	
 	public void equip(MainCharacter c) {
 		if(c.canAddEquipement()) {
-			equip(c);
+			equip((Character)c);
 		}
 	}
 
 	public String getName() {
 		return name;
+	}
+	
+	@Override
+	public String toString() {
+String line;
+
+line=name;
+		
+		return line;
 	}
 
 }
