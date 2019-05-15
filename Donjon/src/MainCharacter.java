@@ -1,7 +1,9 @@
+import java.util.Scanner;
 
 public class MainCharacter extends Character{
 	
 	protected Bag actual_bag= new Bag("GROSAC", 100);
+	Scanner sc = new Scanner(System.in);
 	
 	/**
 	 * Position[0] = x,  Position[1] = y
@@ -24,7 +26,8 @@ public class MainCharacter extends Character{
 	}
 	
 	@Override
-	public void interact(int damages) {
+	public void interact(int damages, Character monstre) {
+		
 		
 		
 		
@@ -52,6 +55,10 @@ public class MainCharacter extends Character{
 			return;
 		}
 	}
+	
+	
+	
+	
 	
 	public void getPosition() {
 		System.out.println("x :"+Position[0]);
