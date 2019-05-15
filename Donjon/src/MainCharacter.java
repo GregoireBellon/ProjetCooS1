@@ -24,8 +24,7 @@ public class MainCharacter extends Character{
 		}
 		return false;
 	}
-	
-	
+		
 	public void fight(int damages, Character Agresseur) {
 		Equipment weapon = Agresseur.equipment_list.get(0);
 		int precision = ((Weapon) weapon).getPrecision();
@@ -70,9 +69,6 @@ public class MainCharacter extends Character{
 		
 		}
 	}
-		
-		
-		
 		
 	}
 	
