@@ -75,11 +75,20 @@ public class Character {
 		return line;
 	}
 	
-	public void interact(int damages) {};
-	public void attack(int damages, Character c) {
-		c.interact(damages);
+	public void fight(int damages, Character Agresseur) {
+		hp=hp-damages;
+		
+		Weapon weapon= (Weapon) equipment_list.get(0);
+		System.out.println("Dommages de son arme : "+weapon.pa);
+				
+		Agresseur.fight(weapon.pa, this);
+		
+		
 	}
 
+	public String getName() {
+		return name;
+	}
 	
 	
 }
