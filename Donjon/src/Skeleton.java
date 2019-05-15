@@ -7,6 +7,7 @@ public class Skeleton extends Character implements Enemy{
 	}
 
 	public void attack(MainCharacter mainchar) {
+
 		//mainchar.interact();
 	}
 
@@ -15,6 +16,13 @@ public class Skeleton extends Character implements Enemy{
 
 		
 
+
+	}
+
+	@Override
+	public void interact() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

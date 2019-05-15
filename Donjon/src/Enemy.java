@@ -1,5 +1,6 @@
 
 public interface Enemy {
 		
-	//public void  interact(int damages);
+	public void  interact();
+
 }

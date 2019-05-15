@@ -55,6 +55,7 @@ public class Character {
 		}
 		return;
 	}
+
 	
 	@Override
 	public String toString() {
@@ -80,6 +81,6 @@ public class Character {
 		c.interact(damages);
 	}
 
-	
+
 	
 }

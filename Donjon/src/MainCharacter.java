@@ -30,7 +30,7 @@ public class MainCharacter extends Character{
 		
 		
 	}
-	
+
 	public void move(Dungeon place, int direction){
 		switch(direction) {
 		case 0 :
@@ -54,10 +54,7 @@ public class MainCharacter extends Character{
 		}
 	}
 	
-	
-	
-	
-	
+
 	public void getPosition() {
 		System.out.println("x :"+Position[0]);
 		System.out.println("y :"+Position[1]);
