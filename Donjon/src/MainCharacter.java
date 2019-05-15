@@ -25,10 +25,8 @@ public class MainCharacter extends Character{
 		return false;
 	}
 	
-	@Override
 	public void interact(int damages, Character monstre) {
-		
-		System.out.println(Character.);
+		return;
 		
 		
 	}
