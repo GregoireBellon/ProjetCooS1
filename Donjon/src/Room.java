@@ -30,10 +30,23 @@ public class Room {
 					Door[i]=false;
 				}
 			}
-			else {
-				Door[i]=true;
-			}
-		}		
+		}
+		switch (direction) {
+		case 0:
+			Door[2] = true;
+		break;
+		case 1:
+			Door[3] = true;
+		break;
+		case 2:
+			Door[0] = true;
+		break;
+		case 3:
+			Door[1] = true;
+		break;
+		default:
+		}
+				
 	}
 
 
