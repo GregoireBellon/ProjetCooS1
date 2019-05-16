@@ -12,9 +12,9 @@ public class Room {
 	
 	
 	/**
-	 * 
-	 * @param a
-	 * @param b
+	 * When the room is created, it get one door where the player come from, the three other are randomly generated
+	 * @param a is the x position of the new room
+	 * @param b is the y position of the new room
 	 * @param direction depends on the point where the player is coming from, it go from 0 to 3 (order similar to door)
 	 */
 	Room(int a,int b,int direction){ 
