@@ -1,0 +1,31 @@
+
+`squid:S1125'"(Remove the literal "true" boolean value.(¤ΰ‰ωÿÿÿÿ8Ηƒ³α«-HlRMINORZ
+CODE_SMELL
+[squid:S1125*"(Remove the literal "true" boolean value.(”µύβ8Ηƒ³α«-HmRMINORZ
+CODE_SMELL
+\squid:S1125")Remove the literal "false" boolean value.(›‹Δ8Ηƒ³α«-HeRMINORZ
+CODE_SMELL
+jsquid:S1197"8Move the array designator from the variable to the type.(ϋ¤ζ8Ηƒ³α«-HdRMINORZ
+CODE_SMELL
+[squid:S1125$"(Remove the literal "true" boolean value.(νζ„τ8Ηƒ³α«-HkRMINORZ
+CODE_SMELL
+squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ηµν‘8Ηƒ³α«-HnRCRITICALZ
+CODE_SMELL
+[squid:S1125!"(Remove the literal "true" boolean value.(λ†¤ά8Ηƒ³α«-HjRMINORZ
+CODE_SMELL
+squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ω§™γώÿÿÿÿ8Ηƒ³α«-HpRMINORZ
+CODE_SMELL
+…squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(―ΦΤ8Ηƒ³α«-HqRMINORZ
+CODE_SMELL
+`squid:S1125"(Remove the literal "true" boolean value.(­λΦΒόÿÿÿÿ8Ηƒ³α«-HhRMINORZ
+CODE_SMELL
+[squid:S1125"(Remove the literal "true" boolean value.(‘”λά8Ηƒ³α«-HiRMINORZ
+CODE_SMELL
+squid:S00117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Νθήκϋÿÿÿÿ8Ηƒ³α«-HoRMINORZ
+CODE_SMELL
+[squid:S1125"(Remove the literal "true" boolean value.(³«Ϊ‹8Ηƒ³α«-HfRMINORZ
+CODE_SMELL
+`squid:S1125"(Remove the literal "true" boolean value.(ΎΈ¨Σϋÿÿÿÿ8Ηƒ³α«-HgRMINORZ
+CODE_SMELL
+Fsquid:S1220""Move this file to a named package.H(RMINORZ
+CODE_SMELL

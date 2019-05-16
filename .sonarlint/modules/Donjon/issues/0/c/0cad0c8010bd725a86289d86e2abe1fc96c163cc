@@ -1,22 +1,17 @@
 
-ysquid:S1126"AReplace this if-then-else statement by a single return statement.(†Æ©ùúÿÿÿÿ8ğ„ÃŠ©-HRMINORZ
+ysquid:S1126"AReplace this if-then-else statement by a single return statement.(†Æ©ùúÿÿÿÿ8ğ„ÃŠ©-H$RMINORZ
 CODE_SMELL
-p
-squid:S106:"9Replace this use of System.out or System.err by a logger.(ÃÀšÅûÿÿÿÿ8ğ„ÃŠ©-H
-RMAJORZ
+Nsquid:S3626"Remove this redundant jump.(ûÁİ…8¿ÛÄŞ«-H%RMINORZ
 CODE_SMELL
-Fsquid:S1220""Move this file to a named package.HRMINORZ
+Fsquid:S1220""Move this file to a named package.HRMINORZ
 CODE_SMELL
-‡squid:S00116	"SRename this field "Position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ¶ÙØ8ğ„ÃŠ©-HRMINORZ
+^squid:S1172"&Remove these unused method parameters.(×äĞûÿÿÿÿ8¿ÛÄŞ«-H&RMAJORZ
 CODE_SMELL
-‚squid:S00116"URename this field "actual_bag" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§È±©HRMINORZ
+‚squid:S00116"URename this field "actual_bag" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§È±©H RMINORZ
 CODE_SMELL
-ksquid:S1197	"8Move the array designator from the variable to the type.(õ¶ÙØ8ğ„ÃŠ©-HRMINORZ
+ksquid:S1197"8Move the array designator from the variable to the type.(õ¶ÙØ8ğ„ÃŠ©-H#RMINORZ
 CODE_SMELL
-k
-squid:S1069"9Replace this use of System.out or System.err by a logger.(¹ßò8ğ„ÃŠ©-H	RMAJORZ
+…squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ ¿À8ğ„ÃŠ©-HRMINORZ
 CODE_SMELL
-¶squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸áÉ8€µ£Ş«-HRCRITICALZ
-CODE_SMELL
-…squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ ¿À8ğ„ÃŠ©-HRMINORZ
+‡squid:S00116"SRename this field "Position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ¶ÙØ8ğ„ÃŠ©-H!RMINORZ
 CODE_SMELL

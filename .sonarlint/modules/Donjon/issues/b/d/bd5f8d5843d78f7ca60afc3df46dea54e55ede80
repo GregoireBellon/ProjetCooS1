@@ -1,9 +1,7 @@
 
-psquid:S1197
-"8Move the array designator from the variable to the type.(àÑçÑüÿÿÿÿ8¸Èúã¨-H[RMINORZ
+ˆsquid:S00116"ORename this field "Door" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÑçÑüÿÿÿÿ8¸Èúã¨-H0RMINORZ
 CODE_SMELL
-Fsquid:S1220""Move this file to a named package.H\RMINORZ
+Fsquid:S1220""Move this file to a named package.H1RMINORZ
 CODE_SMELL
-ˆsquid:S00116
-"ORename this field "Door" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÑçÑüÿÿÿÿ8¸Èúã¨-H]RMINORZ
+psquid:S1197"8Move the array designator from the variable to the type.(àÑçÑüÿÿÿÿ8¸Èúã¨-H/RMINORZ
 CODE_SMELL

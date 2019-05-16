@@ -3,6 +3,7 @@ public class Room {
 	
 	private int x;
 	private int y;
+	private Event event;
 	
 	/**
 	 * Every boolean stands for a door (in order: North,East,South,West), True if there is a door, false if not
@@ -17,6 +18,7 @@ public class Room {
 	 * @param direction depends on the point where the player is coming from, it go from 0 to 3 (order similar to door)
 	 */
 	Room(int a,int b,int direction){ 
+		event = new Event();
 		int i;
 		x = a;
 		y = b;
@@ -45,9 +47,9 @@ public class Room {
 			Door[1] = true;
 		break;
 		default:
-		}
-				
+		}					
 	}
+
 
 
 	public int getX() {
@@ -63,6 +65,10 @@ public class Room {
 	public boolean getDoor(int i) {
 		return Door[i];
 	}
-	
+
+	public Event getEvent() {
+		return event;
+	}
+		
 	
 }
