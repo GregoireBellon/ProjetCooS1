@@ -42,7 +42,7 @@ public class MainCharacter extends Character{
 	}
 
 	/**
-	 * Make the character move inside of a dungeon, in a specific direction
+	 * Make the character move inside of a dungeon, in a specific direction (0 = north, 1 = east, 2 = south, 3 = west)
 	 * @param place The dungeon, it need to be specified in order to generate new room
 	 * @param direction The direction of the character while he is moving
 	 */
