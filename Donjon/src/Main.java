@@ -2,17 +2,19 @@ import java.util.Scanner;
 
 public class Main {
 	
+	static int progression=0;
+	
 	public static void main(String[] args) {
 	
 		boolean fin = false;
 		
 		Dungeon D = new Dungeon (50,50);
 		
-		Weapon Dagger = new Weapon ("Dagger",4);
+		Weapon Dagger = new Weapon ("Dagger",4, 20);
 		
 		int position[]= {50,50};
 		
-		MainCharacter Karen = new MainCharacter("Karen",position,Dagger);
+		MainCharacter Karen = new MainCharacter("Karen",position,Dagger, D);
 		
 		while (fin == false) {
 			Scanner scan = new Scanner(System.in);
@@ -50,5 +52,10 @@ public class Main {
 	
 	
 }
+	
+	public void set_avancement(int progression) {
+		this.progression=progression;
+	}
+	
 }
 

@@ -2,11 +2,12 @@
 public class Weapon extends Equipment {
 
 	protected int pa;
-	protected int precision; // précision de l'arme
+	protected int precision; // precision of the weapon
 
-	Weapon(String name, int pa) {
+	Weapon(String name, int pa, int precision) { //
 		super(name);
 		this.pa = pa;
+		this.precision=precision;
 	}
 
 	public int getPa() {

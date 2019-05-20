@@ -3,6 +3,11 @@ public class Room {
 	
 	private int x;
 	private int y;
+	private boolean is_there_ennemy; //is there an ennemy in the room?
+	private boolean is_there_chest; //is there a chest in the room?
+
+	private Character ennemy;
+	private Chest chest;
 	
 	/**
 	 * Every boolean stands for a door (in order: North,East,South,West), True if there is a door, false if not
@@ -47,6 +52,15 @@ public class Room {
 		default:
 		}
 				
+	///////////////////////////// Content of the room
+		is_there_ennemy=generateBoolean(15);
+		if(is_there_ennemy) {
+			Ennemy=Generation.generate_ennemy();//à coder_
+		}
+		
+		
+		
+	
 	}
 
 
@@ -64,5 +78,20 @@ public class Room {
 		return Door[i];
 	}
 	
+	/**
+	 * renerate a boolean
+	 * @param chances chances that the boolean is true, between 1 and 100
+	 * @return
+	 */
+	private boolean generateBoolean(int chances) {
+
+		double alea = Math.random();
+		
+		if(alea>=chances) {
+			return true;
+		}
+		return false;
+		
+	}
 	
 }
