@@ -16,9 +16,9 @@ public class Character {
 		
 		this.name = name;
 		this.hp = hp;
+		hp_max=hp;
 		equipment_list.add(weapon);
 		this.place = place;
-		hp_max=10;
 	}
 	
 	/**

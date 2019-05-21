@@ -55,7 +55,7 @@ public class Room {
 	///////////////////////////// Content of the room
 		is_there_ennemy=generateBoolean(15);
 		if(is_there_ennemy) {
-			Ennemy=Generation.generate_ennemy();//à coder_
+			//Ennemy=Generation.generate_ennemy();//à coder_
 		}
 		
 		

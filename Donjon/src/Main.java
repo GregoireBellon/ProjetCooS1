@@ -1,8 +1,19 @@
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
 	
-	static int progression=0;
+	public static File bestiary_txt = new File(System.getProperty("user.dir")+"/bestiary.txt");
+	public static File weapons_txt = new File(System.getProperty("user.dir") +"/weapons.txt");
+	
+	public static double progression=10;
+	
+	public static Dungeon place = new Dungeon(20, 20);
+	
+	public static int[] first_position = {10,10};
+
+	public static Weapon first_weapon = new Weapon("stick", 5, 60);
+	public static MainCharacter hero = new MainCharacter("Karen",first_position, first_weapon , place);
 	
 	public static void main(String[] args) {
 	
