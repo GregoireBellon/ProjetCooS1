@@ -5,29 +5,13 @@ public class TestDivers {
 
 		int[] position = {5,5};
 		
-		Weapon w = new Weapon("Lunettes", 1);
+		Weapon w = new Weapon("Lunettes", 20);
+		Weapon w1 = new Weapon("Ptite Massue", 1);
 		MainCharacter Louis = new MainCharacter("Louis", position, w);
-
-		Equipment a = new Equipment("Ce");
-		a.equip(Louis);
-		Equipment z = new Equipment("Programme");
-		z.equip(Louis);
-		Equipment e = new Equipment("Est");
-		e.equip(Louis);
-		Equipment r = new Equipment("tout");
-		r.equip(Louis);
-		Equipment t = new Equipment("simplement");
-		t.equip(Louis);
-		Equipment y = new Equipment("inoui");
-		y.equip(Louis);
-		Equipment u = new Equipment("!");
-		u.equip(Louis);
-		Equipment i = new Equipment(":)");
-		i.equip(Louis);
-
-
-
-
+		Character skeletton = new Character("Skeletton", 10, w1);
+		skeletton.fight(0, Louis);
+		
+		
 		
 		System.out.println(Louis);
 		

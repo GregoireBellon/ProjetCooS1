@@ -1,17 +1,11 @@
 
-ysquid:S1126"AReplace this if-then-else statement by a single return statement.(†Æ©ùúÿÿÿÿ8ğ„ÃŠ©-H$RMINORZ
+_squid:S1172&"&Remove these unused method parameters.(×äĞûÿÿÿÿ8¿ÛÄŞ«-HÙRMAJORZ
 CODE_SMELL
-Nsquid:S3626"Remove this redundant jump.(ûÁİ…8¿ÛÄŞ«-H%RMINORZ
+lsquid:S1197"8Move the array designator from the variable to the type.(õ¶ÙØ8ğ„ÃŠ©-HÕRMINORZ
 CODE_SMELL
-Fsquid:S1220""Move this file to a named package.HRMINORZ
+zsquid:S1126 "AReplace this if-then-else statement by a single return statement.(†Æ©ùúÿÿÿÿ8ğ„ÃŠ©-HØRMINORZ
 CODE_SMELL
-^squid:S1172"&Remove these unused method parameters.(×äĞûÿÿÿÿ8¿ÛÄŞ«-H&RMAJORZ
+Osquid:S3626'"Remove this redundant jump.(ûÁİ…8¿ÛÄŞ«-HÖRMINORZ
 CODE_SMELL
-‚squid:S00116"URename this field "actual_bag" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§È±©H RMINORZ
-CODE_SMELL
-ksquid:S1197"8Move the array designator from the variable to the type.(õ¶ÙØ8ğ„ÃŠ©-H#RMINORZ
-CODE_SMELL
-…squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ ¿À8ğ„ÃŠ©-HRMINORZ
-CODE_SMELL
-‡squid:S00116"SRename this field "Position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ¶ÙØ8ğ„ÃŠ©-H!RMINORZ
+Gsquid:S1220""Move this file to a named package.H×RMINORZ
 CODE_SMELL

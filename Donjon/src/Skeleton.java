@@ -12,7 +12,7 @@ public class Skeleton extends Character implements Enemy{
 	}
 
 	@Override
-	public void interact(int damages) {
+	public void interact(int damages, Character c) {
 
 		
 

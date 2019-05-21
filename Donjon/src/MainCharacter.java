@@ -34,10 +34,51 @@ public class MainCharacter extends Character{
 		}
 		return false;
 	}
-	
-	public void interact(int damages, Character monstre) {
-		return;
 		
+	public void fight(int damages, Character Agresseur) {
+		Equipment weapon = Agresseur.equipment_list.get(0);
+		int precision = ((Weapon) weapon).getPrecision();
+		boolean good_choice=false;
+		int choice;
+		System.out.println(Agresseur.getName()+" is attacking you! He could inflige you "+damages+" damages");
+		System.out.println("What do you want to do?");
+		System.out.println("1 : take the hit");
+		System.out.println("2 : try to dodge ("+(100-precision)+"% of chance)");
+		
+		while(!good_choice) {
+			choice = sc.nextInt();
+		switch(choice) {
+		case 1: hp = hp-damages; good_choice=true; System.out.println("You took the hit : -"+damages);
+		break;
+		case 2: 
+			int chance= (int)Math.random()*100;
+			if(chance>precision) {
+				System.out.println("Hit dodged ("+chance+"%)"); //score fait par l'alea
+			
+			}
+			else {
+				System.out.println("Hit taken ("+chance+"%)");
+				System.out.println("-"+damages*1.5);
+				hp=(int) (hp-damages*1.5);
+			}
+			good_choice=true;
+			break;
+		default: System.out.println("Mauvais choix !"); good_choice=false;
+		}
+		good_choice=false;
+		while(!good_choice) {
+		System.out.println("Que voulez vous faire?");
+		System.out.println("1 Attaquer");
+		choice=sc.nextInt();
+		switch(choice) {
+		case 1: 
+			Weapon weapon_player = (Weapon) super.equipment_list.get(0);
+					Agresseur.fight(weapon_player.pa, this);		
+		}
+		
+		
+		}
+	}
 		
 	}
 
