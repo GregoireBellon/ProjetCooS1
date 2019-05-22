@@ -1,5 +1,32 @@
 
-qsquid:S1197"8Move the array designator from the variable to the type.(àÑçÑüÿÿÿÿ8¸Èúã¨-H©RMINORZ
+ksquid:S1068"2Remove this unused "is_there_chest" private field.(Îåˆ´úÿÿÿÿ8õ¥ó­-HRMAJORZ
 CODE_SMELL
-Gsquid:S1220""Move this file to a named package.H§RMINORZ
+‰squid:S00116"ORename this field "Door" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÑçÑüÿÿÿÿ8·”ò­-HìRMINORZ
+CODE_SMELL
+squid:S00116"ZRename this field "is_there_ennemy" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¤¶8õ¥ó­-H¡RMINORZ
+CODE_SMELL
+usquid:S1126x"AReplace this if-then-else statement by a single return statement.(‘è‡–8õ¥ó­-H RMINORZ
+CODE_SMELL
+“squid:S00116"YRename this field "is_there_chest" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îåˆ´úÿÿÿÿ8õ¥ó­-H¢RMINORZ
+CODE_SMELL
+]squid:S1068")Remove this unused "chest" private field.(×­ŒŸ8õ¥ó­-HŸRMAJORZ
+CODE_SMELL
+\squid:S1125G"(Remove the literal "true" boolean value.(¤›×8ÑƒÆô­-H±RMINORZ
+CODE_SMELL
+o"squid:SwitchLastCaseIsDefaultCheck!""Add a default case to this switch.(ìúÇV8ÑƒÆô­-H­RCRITICALZ
+CODE_SMELL
+qsquid:S1197"8Move the array designator from the variable to the type.(àÑçÑüÿÿÿÿ8¸Èúã¨-HëRMINORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HêRMINORZ
+CODE_SMELL
+\squid:S11251"(Remove the literal "true" boolean value.(Ğİ·ş8ÑƒÆô­-H¯RMINORZ
+CODE_SMELL
+asquid:S1125&"(Remove the literal "true" boolean value.(ÆÁ¯şÿÿÿÿ8ÑƒÆô­-H®RMINORZ
+CODE_SMELL
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(¢¯Øƒ8ÑƒÆô­-H²RCRITICALZ
+CODE_SMELL
+^squid:S1068
+"*Remove this unused "ennemy" private field.(…é§8õ¥ó­-HRMAJORZ
+CODE_SMELL
+\squid:S1125<"(Remove the literal "true" boolean value.(š³–Ë8ÑƒÆô­-H°RMINORZ
 CODE_SMELL

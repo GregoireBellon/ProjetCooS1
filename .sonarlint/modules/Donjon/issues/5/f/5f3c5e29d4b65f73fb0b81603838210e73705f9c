@@ -1,26 +1,71 @@
 
-Osquid:S3626H"Remove this redundant jump.(ûÁİ…8ƒìÁŞ«-HƒRMINORZ
+q
+squid:S106j"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¬±óØ­-H«RMAJORZ
 CODE_SMELL
-Gsquid:S1220""Move this file to a named package.H„RMINORZ
+­squid:S1319"yThe type of the "equipment_list" object should be an interface such as "List" rather than the implementation "ArrayList".(º£şË8¬±óØ­-H¬RMINORZ
 CODE_SMELL
-Osquid:S1643Z"Use a StringBuilder instead.(¹µ¾Z8ƒìÁŞ«-H…RMINORZ
+gsquid:S1172e".Remove this unused method parameter "damages".(“ƒØ¿ÿÿÿÿÿ8ŸŠó­-H­RMAJORZ
 CODE_SMELL
-squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(º£şË8¬±óØ­-H†RMINORZ
+Œsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıàğÎüÿÿÿÿ8ŸŠó­-H®RMINORZ
 CODE_SMELL
-­squid:S1319"yThe type of the "equipment_list" object should be an interface such as "List" rather than the implementation "ArrayList".(º£şË8¬±óØ­-H‡RMINORZ
-CODE_SMELL
-l
-squid:S106"9Replace this use of System.out or System.err by a logger.(é“¦¿8¬±óØ­-HˆRMAJORZ
+r
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(Æ©™õşÿÿÿÿ8ŸŠó­-H¯RMAJORZ
 CODE_SMELL
 q
-squid:S106e"9Replace this use of System.out or System.err by a logger.(êÌ´¡ıÿÿÿÿ8¬±óØ­-H‰RMAJORZ
+squid:S106i"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ŸŠó­-H°RMAJORZ
 CODE_SMELL
-¨"squid:ClassVariableVisibilityCheck"ZMake equipment_list a static final constant or non-public and provide accessors if needed.(º£şË8¬±óØ­-HŠRMINORZVULNERABILITY
-‹squid:S00116"QRename this field "hp_max" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ã›©úÿÿÿÿ8¬±óØ­-H‹RMINORZ
+r
+squid:S106š"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ŸŠó­-H±RMAJORZ
 CODE_SMELL
-squid:S00116"YRename this field "equipment_list" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º£şË8¬±óØ­-HŒRMINORZ
+Osquid:S1643^"Use a StringBuilder instead.(¹µ¾Z8ƒìÁŞ«-H²RMINORZ
 CODE_SMELL
-†squid:S00117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î›ı8¬±óØ­-HRMINORZ
+r
+squid:S106¯"9Replace this use of System.out or System.err by a logger.(‰ÜøÛüÿÿÿÿ8ŸŠó­-H³RMAJORZ
 CODE_SMELL
-‹squid:S00117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êğœöúÿÿÿÿ8¬±óØ­-HRMINORZ
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(Áğò˜ùÿÿÿÿ8ŸŠó­-H´RMAJORZ
+CODE_SMELL
+†squid:S00117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î›ı8¬±óØ­-HµRMINORZ
+CODE_SMELL
+l
+squid:S106m"9Replace this use of System.out or System.err by a logger.(Ééç•8ŸŠó­-H¶RMAJORZ
+CODE_SMELL
+squid:S00116"YRename this field "equipment_list" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º£şË8¬±óØ­-H·RMINORZ
+CODE_SMELL
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(º£şË8¬±óØ­-H¸RMINORZ
+CODE_SMELL
+k
+squid:S106h"9Replace this use of System.out or System.err by a logger.(áÀÁ8ŸŠó­-H¹RMAJORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.H¨RMINORZ
+CODE_SMELL
+Vsquid:S1643“"Use a StringBuilder instead.(üèêéùÿÿÿÿ8ŸŠó­-HºRMINORZ
+CODE_SMELL
+‹squid:S00116"QRename this field "hp_max" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êû«ºüÿÿÿÿ8¬±óØ­-H»RMINORZ
+CODE_SMELL
+q
+squid:S106n"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ŸŠó­-H¼RMAJORZ
+CODE_SMELL
+r
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(ÂŸ¹ùÿÿÿÿ8ŸŠó­-H½RMAJORZ
+CODE_SMELL
+l
+squid:S106#"9Replace this use of System.out or System.err by a logger.(é“¦¿8¬±óØ­-H¾RMAJORZ
+CODE_SMELL
+Osquid:S3626L"Remove this redundant jump.(ûÁİ…8ƒìÁŞ«-H¿RMINORZ
+CODE_SMELL
+r
+squid:S106¦"9Replace this use of System.out or System.err by a logger.(¸ç¡–úÿÿÿÿ8ŸŠó­-HÀRMAJORZ
+CODE_SMELL
+r
+squid:S106™"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ŸŠó­-HÁRMAJORZ
+CODE_SMELL
+r
+squid:S106­"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8ŸŠó­-HÂRMAJORZ
+CODE_SMELL
+Vsquid:S1643–"Use a StringBuilder instead.(‘ÆÛÃıÿÿÿÿ8ŸŠó­-HÃRMINORZ
+CODE_SMELL
+¨"squid:ClassVariableVisibilityCheck"ZMake equipment_list a static final constant or non-public and provide accessors if needed.(º£şË8¬±óØ­-HÄRMINORZVULNERABILITY
+m
+squid:S106±"9Replace this use of System.out or System.err by a logger.(øèè£8ŸŠó­-HÅRMAJORZ
 CODE_SMELL

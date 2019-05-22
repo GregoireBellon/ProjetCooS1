@@ -1,9 +1,18 @@
 
-‹squid:S00117
-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Â†Óüÿÿÿÿ8ÌÎõØ­-HÆRMINORZ
-CODE_SMELL
-Gsquid:S1220""Move this file to a named package.HÄRMINORZ
+Gsquid:S1220""Move this file to a named package.H‘RMINORZ
 CODE_SMELL
 q
-squid:S106"9Replace this use of System.out or System.err by a logger.(ñ“ã–øÿÿÿÿ8ÌÎõØ­-HÅRMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÔÆÆûÿÿÿÿ8ÌÎõØ­-H’RMAJORZ
+CODE_SMELL
+†squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÿĞë8ÌÎõØ­-HRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”ùùÿÿÿÿ8ºŒˆó­-H†RMAJORZ
+CODE_SMELL
+gsquid:S1481".Remove this unused "skeletton" local variable.(ÿÖŞ—şÿÿÿÿ8ºŒˆó­-H‡RMINORZ
+CODE_SMELL
+vsquid:S1854"=Remove this useless assignment to local variable "skeletton".(ÿÖŞ—şÿÿÿÿ8ºŒˆó­-HˆRMAJORZ
+CODE_SMELL
+qsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ºŒˆó­-H‰RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ºŒˆó­-HŠRMINORZ
 CODE_SMELL
