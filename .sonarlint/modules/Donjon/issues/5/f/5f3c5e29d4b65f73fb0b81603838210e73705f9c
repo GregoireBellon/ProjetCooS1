@@ -1,11 +1,26 @@
 
-Osquid:S1643Z"Use a StringBuilder instead.(¹µ¾Z8ƒìÁŞ«-HÍRMINORZ
+Osquid:S3626H"Remove this redundant jump.(ûÁİ…8ƒìÁŞ«-HƒRMINORZ
 CODE_SMELL
-csquid:EmptyStatementUsageChecka"Remove this empty statement.(í˜ÉÏ8ƒìÁŞ«-HÅRMINORZ
+Gsquid:S1220""Move this file to a named package.H„RMINORZ
 CODE_SMELL
-¸squid:S1186a"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í˜ÉÏ8ƒìÁŞ«-HÆRCRITICALZ
+Osquid:S1643Z"Use a StringBuilder instead.(¹µ¾Z8ƒìÁŞ«-H…RMINORZ
 CODE_SMELL
-Gsquid:S1220""Move this file to a named package.HËRMINORZ
+squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(º£şË8¬±óØ­-H†RMINORZ
 CODE_SMELL
-Osquid:S3626H"Remove this redundant jump.(ûÁİ…8ƒìÁŞ«-HÄRMINORZ
+­squid:S1319"yThe type of the "equipment_list" object should be an interface such as "List" rather than the implementation "ArrayList".(º£şË8¬±óØ­-H‡RMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(é“¦¿8¬±óØ­-HˆRMAJORZ
+CODE_SMELL
+q
+squid:S106e"9Replace this use of System.out or System.err by a logger.(êÌ´¡ıÿÿÿÿ8¬±óØ­-H‰RMAJORZ
+CODE_SMELL
+¨"squid:ClassVariableVisibilityCheck"ZMake equipment_list a static final constant or non-public and provide accessors if needed.(º£şË8¬±óØ­-HŠRMINORZVULNERABILITY
+‹squid:S00116"QRename this field "hp_max" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ã›©úÿÿÿÿ8¬±óØ­-H‹RMINORZ
+CODE_SMELL
+squid:S00116"YRename this field "equipment_list" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º£şË8¬±óØ­-HŒRMINORZ
+CODE_SMELL
+†squid:S00117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î›ı8¬±óØ­-HRMINORZ
+CODE_SMELL
+‹squid:S00117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êğœöúÿÿÿÿ8¬±óØ­-HRMINORZ
 CODE_SMELL

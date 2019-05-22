@@ -1,3 +1,9 @@
 
-Gsquid:S1220""Move this file to a named package.HÞRMINORZ
+‹squid:S00117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Â†Óüÿÿÿÿ8ÌÎõØ­-HÆRMINORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HÄRMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñ“ã–øÿÿÿÿ8ÌÎõØ­-HÅRMAJORZ
 CODE_SMELL

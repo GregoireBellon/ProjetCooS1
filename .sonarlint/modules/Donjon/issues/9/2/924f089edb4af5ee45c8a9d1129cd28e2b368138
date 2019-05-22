@@ -1,25 +1,49 @@
 
-\squid:S1125"(Remove the literal "true" boolean value.(‘”ëÜ8Çƒ³á«-H¸RMINORZ
+\squid:S1125"(Remove the literal "true" boolean value.(‘”ëÜ8Çƒ³á«-H‘RMINORZ
 CODE_SMELL
-asquid:S1125"(Remove the literal "true" boolean value.(¾¸¨Óûÿÿÿÿ8Çƒ³á«-H¶RMINORZ
+\squid:S1125$"(Remove the literal "true" boolean value.(íæ„ô8Çƒ³á«-H˜RMINORZ
 CODE_SMELL
-asquid:S1125'"(Remove the literal "true" boolean value.(¤à‰ùÿÿÿÿ8Çƒ³á«-H®RMINORZ
+‹squid:S00117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍèŞêûÿÿÿÿ8†ÌóØ­-H¡RMINORZ
 CODE_SMELL
-\squid:S1125$"(Remove the literal "true" boolean value.(íæ„ô8Çƒ³á«-H¹RMINORZ
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(í¡²şÿÿÿÿ8†ÌóØ­-HœRMAJORZ
 CODE_SMELL
-]squid:S1125")Remove the literal "false" boolean value.(›‹Ä8Çƒ³á«-H»RMINORZ
+\squid:S1125*"(Remove the literal "true" boolean value.(”µıâ8Çƒ³á«-H™RMINORZ
 CODE_SMELL
-‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Çµí‘8Çƒ³á«-HºRCRITICALZ
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Çµí‘8Çƒ³á«-H•RCRITICALZ
 CODE_SMELL
-\squid:S1125"(Remove the literal "true" boolean value.(³«Ú‹8Çƒ³á«-H´RMINORZ
+\squid:S1125"(Remove the literal "true" boolean value.(³«Ú‹8Çƒ³á«-HRMINORZ
 CODE_SMELL
-\squid:S1125!"(Remove the literal "true" boolean value.(ë†¤Ü8Çƒ³á«-H²RMINORZ
+‹squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù§™ãşÿÿÿÿ8†ÌóØ­-H¢RMINORZ
 CODE_SMELL
-ksquid:S1197"8Move the array designator from the variable to the type.(û¤æ8Çƒ³á«-H¼RMINORZ
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(…‰ÿ½ùÿÿÿÿ8†ÌóØ­-HŸRMAJORZ
 CODE_SMELL
-\squid:S1125*"(Remove the literal "true" boolean value.(”µıâ8Çƒ³á«-H±RMINORZ
+asquid:S1125"(Remove the literal "true" boolean value.(­ëÖÂüÿÿÿÿ8Çƒ³á«-H—RMINORZ
 CODE_SMELL
-asquid:S1125"(Remove the literal "true" boolean value.(­ëÖÂüÿÿÿÿ8Çƒ³á«-H°RMINORZ
+Gsquid:S1220""Move this file to a named package.H–RMINORZ
 CODE_SMELL
-Gsquid:S1220""Move this file to a named package.H³RMINORZ
+ksquid:S1197"8Move the array designator from the variable to the type.(û¤æ8Çƒ³á«-H’RMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(¿ğò•şÿÿÿÿ8†ÌóØ­-H›RMAJORZ
+CODE_SMELL
+]squid:S1125")Remove the literal "false" boolean value.(›‹Ä8Çƒ³á«-HRMINORZ
+CODE_SMELL
+asquid:S1125'"(Remove the literal "true" boolean value.(¤à‰ùÿÿÿÿ8Çƒ³á«-H”RMINORZ
+CODE_SMELL
+\squid:S1125!"(Remove the literal "true" boolean value.(ë†¤Ü8Çƒ³á«-HšRMINORZ
+CODE_SMELL
+asquid:S1125"(Remove the literal "true" boolean value.(¾¸¨Óûÿÿÿÿ8Çƒ³á«-H“RMINORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(œ¨ƒÔ8†ÌóØ­-HRMAJORZ
+CODE_SMELL
+†squid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ŒÖÔ8†ÌóØ­-H£RMINORZ
+CODE_SMELL
+q
+squid:S106"9Replace this use of System.out or System.err by a logger.(Õ’¸øÿÿÿÿ8†ÌóØ­-HRMAJORZ
+CODE_SMELL
+q
+squid:S106."9Replace this use of System.out or System.err by a logger.(Š°ù¾ùÿÿÿÿ8†ÌóØ­-H RMAJORZ
 CODE_SMELL
