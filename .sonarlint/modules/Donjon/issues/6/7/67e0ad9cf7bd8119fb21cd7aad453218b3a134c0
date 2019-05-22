@@ -1,10 +1,9 @@
 
-‚squid:S00100
-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¼•Ö8Ş¿’ä¨-HPRMINORZ
+ƒsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¼•Ö8Ş¿’ä¨-H›RMINORZ
 CODE_SMELL
-Fsquid:S1220""Move this file to a named package.HQRMINORZ
+lsquid:S1197"8Move the array designator from the variable to the type.(ıÙü•8€ûşã¨-HœRMINORZ
 CODE_SMELL
-ksquid:S1197"8Move the array designator from the variable to the type.(ıÙü•8€ûşã¨-HRRMINORZ
+ˆsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ü®Àúÿÿÿÿ8Ş¿’ä¨-HšRMINORZ
 CODE_SMELL
-‡squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ü®Àúÿÿÿÿ8Ş¿’ä¨-HSRMINORZ
+Gsquid:S1220""Move this file to a named package.HRMINORZ
 CODE_SMELL

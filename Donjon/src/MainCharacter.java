@@ -12,6 +12,8 @@ public class MainCharacter extends Character {
 	 */
 	protected int Position[] = new int[2];
 
+	
+	
 	public MainCharacter(String name, int[] Position, Weapon weapon, Dungeon place) {
 		super(name, 100, weapon, place);
 		hp_max = 100;
@@ -24,7 +26,6 @@ public class MainCharacter extends Character {
 	 * 
 	 * @return
 	 */
-
 	public boolean canAddEquipement() {
 		if (equipment_list.size() < actual_bag.size) {
 			return true;
@@ -69,9 +70,15 @@ public class MainCharacter extends Character {
 		return 1;
 	}
 
-	public void move(Dungeon place, int direction) {
-		switch (direction) {
-		case 0:
+
+	/**
+	 * Make the character move inside of a dungeon, in a specific direction (0 = north, 1 = east, 2 = south, 3 = west)
+	 * @param place The dungeon, it need to be specified in order to generate new room
+	 * @param direction The direction of the character while he is moving
+	 */
+	public void move(Dungeon place, int direction){
+		switch(direction) {
+		case 0 :
 			this.Position[1]--;
 			place.GenerateRoom(this.Position[0], this.Position[1], direction);
 			break;
@@ -91,7 +98,8 @@ public class MainCharacter extends Character {
 			return;
 		}
 	}
-
+	
+	
 	public void dodge(Character ennemy) {
 		int damages = ennemy.getUsingWeapon().pa;
 		int precision = ennemy.getUsingWeapon().precision;
@@ -113,7 +121,11 @@ public class MainCharacter extends Character {
 		super.printlifeBar();
 
 	}
+	
 
+	/**
+	 * display the 2 position values in the terminal
+	 */
 	public void getPosition() {
 		System.out.println("x :" + Position[0]);
 		System.out.println("y :" + Position[1]);

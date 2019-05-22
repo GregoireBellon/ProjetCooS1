@@ -1,0 +1,10 @@
+
+âsquid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "line".(ı£©HïRMINORZ
+CODE_SMELL
+õ"squid:ClassVariableVisibilityCheck"TMake question a static final constant or non-public and provide accessors if needed.(àáﬂŸHñRMINORZVULNERABILITY
+û"squid:ClassVariableVisibilityCheck"RMake action a static final constant or non-public and provide accessors if needed.(˝÷È˝¯ˇˇˇˇHóRMINORZVULNERABILITY
+ô"squid:ClassVariableVisibilityCheck"RMake target a static final constant or non-public and provide accessors if needed.(í“ú≤HòRMINORZVULNERABILITY
+ó"squid:ClassVariableVisibilityCheck"PMake from a static final constant or non-public and provide accessors if needed.(¯ù…ÁHôRMINORZVULNERABILITY
+ò"squid:ClassVariableVisibilityCheck"QMake place a static final constant or non-public and provide accessors if needed.(ıÇã©HöRMINORZVULNERABILITY
+Gsquid:S1220""Move this file to a named package.HõRMINORZ
+CODE_SMELL

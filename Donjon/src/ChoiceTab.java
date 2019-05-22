@@ -71,7 +71,7 @@ public class ChoiceTab {
 		case "takeH"://take it from "from"
 			System.out.println("You took the hit (-"+choice_selected.target.getUsingWeapon().getPa()+")");
 			System.out.println();
-			choice_selected.from.looseHp(choice_selected.target.getUsingWeapon().pa); //we take the damages of the main weapon
+			choice_selected.from.loseHp(choice_selected.target.getUsingWeapon().pa); //we take the damages of the main weapon
 			return true;
 			
 		case "checkI"://check inventory

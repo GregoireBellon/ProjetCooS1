@@ -102,6 +102,7 @@ public class Generation {
 			
 			Bag bout = generateBag();
 			return bout;
+
 		}
 		else if(rand>0.5) {
 			Weapon wout = generateWeapon(false);
