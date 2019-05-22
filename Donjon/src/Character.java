@@ -4,23 +4,27 @@ public class Character {
 
 	protected String name; 
 	protected int hp; //life
-	protected int hp_max=100; //max life
+	protected int hp_max; //max life
+	protected Dungeon place;
 	
 	/**
 	 * List of everything the character has
 	 */
 	public ArrayList<Equipment> equipment_list= new ArrayList<Equipment>(); 
 	
+
 	/**
 	 * A character is instanced with a name, a number of hp and a weapon
 	 * @param name define the name of the character
 	 * @param hp define how many hp the character have
 	 * @param weapon define the first weapon of the character
 	 */
-	public Character(String name, int hp, Weapon weapon) {
+	public Character(String name, int hp, Weapon weapon, Dungeon place) {
 		this.name = name;
 		this.hp = hp;
+		hp_max=hp;
 		equipment_list.add(weapon);
+		this.place = place;
 	}
 	
 	/**
@@ -94,20 +98,86 @@ public class Character {
 		return line;
 	}
 	
-	public void fight(int damages, Character Agresseur) {
-		hp=hp-damages;
+	public int fight(Character ennemy, int damages) {
+		hp=hp-ennemy.getUsingWeapon().pa;
 		
-		Weapon weapon= (Weapon) equipment_list.get(0);
-		System.out.println("Dommages de son arme : "+weapon.pa);
+		System.out.println("Dammage of the "+name+" : "+getUsingWeapon().pa);
+		System.out.println();
+		System.out.println();
 				
-		Agresseur.fight(weapon.pa, this);
+		if(isDead()) {
+			System.out.println(name+" is dead!");
+			System.out.println();
+			return 0;
+		}
 		
 		
+		ennemy.fight(this, getUsingWeapon().pa);
+		
+	return 1;
 	}
 
 
 	public String getName() {
 		return name;
+	}
+
+	
+	public Weapon getUsingWeapon() {
+		return (Weapon) equipment_list.get(0);
+	}
+	
+	public boolean isDead(){
+		return hp<=0;
+	}
+	
+	public void life() {
+		System.out.println(name+"'s life : "+hp);
+		printlifeBar();
+	}
+	
+	
+	protected void printlifeBar() {
+		
+		System.out.println("max hp :"+hp_max);
+		double coef = (double) 10*((double) hp/hp_max);
+		int hash_number= (int) coef;
+		String bar="";
+		for(int i=0; i<hash_number;i++) {
+			bar=bar+"[*]";
+		}
+		for(int i=0; i<10-hash_number;i++) {
+			bar=bar+"[.]";
+		}
+		System.out.println(bar);
+		System.out.println();
+		System.out.println();
+
+		
+	}
+	
+	public void equip(Equipment equip) {
+		equipment_list.add(equip); //add the equipment to the list
+	}
+	
+	public void checkInventory() {
+		int i =1;
+		for(Equipment extract:equipment_list) {
+			System.out.println(i+" : "+extract.toString());
+			i++;
+		}
+	}
+	
+	public int fightContext(Character ennemy) {
+	int result = this.fight(ennemy, 0);
+	System.out.println(result);
+	if(result==1) {
+		System.out.println(name+" defeated "+ennemy.name);
+	}
+	else System.out.println(ennemy.name+" defeated "+name);
+
+	
+	return result;
 	}
 
 	

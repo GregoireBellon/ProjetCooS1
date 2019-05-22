@@ -9,7 +9,8 @@ public class Dungeon {
 	 * @param y second position value of the first room
 	 */
 	Dungeon(int x,int y) {
-		GenerateRoom(x,y,5);
+	GenerateRoom(x,y,5);
+	
 	}
 	
 	/**

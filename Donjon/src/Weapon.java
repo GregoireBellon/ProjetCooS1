@@ -2,7 +2,8 @@
 public class Weapon extends Equipment {
 
 	protected int pa;
-	protected int precision; // précision de l'arme
+	protected int precision; // precision of the weapon
+
 
 	
 	/**
@@ -10,9 +11,10 @@ public class Weapon extends Equipment {
 	 * @param name The name of the weapon
 	 * @param pa The number of attack points
 	 */
-	Weapon(String name, int pa) {
+	Weapon(String name, int pa, int precision) { //
 		super(name);
 		this.pa = pa;
+		this.precision=precision;
 	}
 
 	public int getPa() {
