@@ -21,7 +21,7 @@ public class Dungeon {
 	 */
 	public void GenerateRoom(int x,int y,int direction) {
 		if (map[x][y] == null) {
-			map[x][y] = new Room(x,y,direction);
+			map[x][y] = new Room(x,y,direction,this);
 		}
 	}
 	

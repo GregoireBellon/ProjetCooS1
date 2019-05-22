@@ -23,36 +23,63 @@ public class Room {
 	 * @param b is the y position of the new room
 	 * @param direction depends on the point where the player is coming from, it go from 0 to 3 (order similar to door)
 	 */
-	Room(int a,int b,int direction){ 
+	public Room (int a,int b,int direction,Dungeon d){ 
 		int i;
 		x = a;
 		y = b;
 		for (i=0;i<4;i++) {
 			if (i != direction) {
 				double r=Math.random()*100;
-				if (r<=50) {
-					Door[i]=true;
-				}
-				else {
-					Door[i]=false;
+				switch (i) {
+				case 0:
+					if (r<=75 && d.GetRoom(a, b-1) == null) {
+						Door[i]=true;
+					}
+					else if (d.GetRoom(a, b-1) != null && d.GetRoom(a, b-1).getDoor(2) == true) {
+						Door[i]=true;
+					}
+					else {
+						Door[i]=false;
+					}
+				break;
+				case 1:
+					if (r<=75 && d.GetRoom(a+1, b) == null) {
+						Door[i]=true;
+					}
+					else if (d.GetRoom(a+1, b) != null && d.GetRoom(a+1, b).getDoor(3) == true) {
+						Door[i]=true;
+					}
+					else {
+						Door[i]=false;
+					}
+				break;
+				case 2:
+					if (r<=75 && d.GetRoom(a, b+1) == null) {
+						Door[i]=true;
+					}
+					else if (d.GetRoom(a, b+1) != null && d.GetRoom(a, b+1).getDoor(0) == true) {
+						Door[i]=true;
+					}
+					else {
+						Door[i]=false;
+					}
+				break;
+				case 3:
+					if (r<=75 && d.GetRoom(a-1, b) == null) {
+						Door[i]=true;
+					}
+					else if (d.GetRoom(a-1, b) != null && d.GetRoom(a-1, b).getDoor(1) == true) {
+						Door[i]=true;
+					}
+					else {
+						Door[i]=false;
+					}
+				break;
 				}
 			}
 		}
-		switch (direction) {
-		case 0:
-			Door[2] = true;
-		break;
-		case 1:
-			Door[3] = true;
-		break;
-		case 2:
-			Door[0] = true;
-		break;
-		case 3:
-			Door[1] = true;
-		break;
-		default:
-		}					
+		
+							
 
 				
 	///////////////////////////// Content of the room
@@ -82,7 +109,7 @@ public class Room {
 
 	
 	/**
-	 * renerate a boolean
+	 * generate a boolean
 	 * @param chances chances that the boolean is true, between 1 and 100
 	 * @return
 	 */
