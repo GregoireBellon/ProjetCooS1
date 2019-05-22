@@ -8,4 +8,14 @@ public class Bag extends Equipment{
 		this.size=size;
 	}
 	
+	@Override
+	public String toString() {
+		
+		String out;
+		
+		out = super.getName()+" : "+size+" slots";
+		
+		return out;
+	}
+	
 }

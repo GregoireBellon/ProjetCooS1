@@ -16,8 +16,12 @@ public class TestDivers {
 		
 		System.out.println(Louis.toString());
 		
-	//	Louis.fightContext(skeletton);
+		Generation.generatePotion();
+	
+	//Louis.fightContext(skeletton);
 		Generation.generateWeapon(false);
+		
+		Generation.generateBag();
 		
 		Generation.generateCharacter();
 		

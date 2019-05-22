@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MainCharacter extends Character {
 
-	protected Bag actual_bag = new Bag("GROSAC", 100);
+	protected Bag actual_bag = new Bag("Litle bag", 5);
 	Scanner sc = new Scanner(System.in);
 
 	/**
