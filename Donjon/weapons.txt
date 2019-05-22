@@ -1,0 +1,19 @@
+mace
+crossbow
+sword
+flail
+halberd
+Spear
+battle axe
+longbow
+war hammer
+baton
+scimitar
+falchion Sword
+greatsword
+longsword
+flail
+mace
+lance
+sagger
+club
