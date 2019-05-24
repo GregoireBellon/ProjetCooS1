@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Dungeon {
 	
-	Room map[][] = new Room[100][100];
+	Room map[][] = new Room[40][40];
 	
 	/**
 	 * When the dungeon get instanced, a first room is created at the x,y position
@@ -23,7 +23,6 @@ public class Dungeon {
 	 * @throws IOException 
 	 */
 	public void GenerateRoom(int x,int y,int direction) throws IOException {
-		System.out.println("GENERATING ROOM");
 		if (map[x][y] == null) {
 			map[x][y] = new Room(x,y,direction,this);
 		}
@@ -36,5 +35,7 @@ public class Dungeon {
 	public Room[][] getMap() {
 		return map;
 	}
+	
+
 	
 }

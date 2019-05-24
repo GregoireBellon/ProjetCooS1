@@ -7,19 +7,15 @@ public class Chest {
 	
 	Chest() throws IOException{
 		
-		System.out.println("Chest generated");
 		
 		open = false;
-		System.out.println("open = false");
 		content = Generation.generateStuff();
 		
 	}
 	
 	public Equipment getContent(){
-		System.out.println("getting content");
 		
 		this.open = true;
-		System.out.println("Open ="+open);
 		
 		return content;
 		
@@ -28,7 +24,6 @@ public class Chest {
 	public void openChest(MainCharacter hero) throws IOException {
 		System.out.println("[OPENING THE CHEST]");
 		
-		System.out.println("open="+open);
 		
 		if(open == true) {
 			System.out.println("Chest already opened");

@@ -1,3 +1,4 @@
+import java.util.Collections;
 
 public class Weapon extends Equipment {
 
@@ -44,11 +45,14 @@ public class Weapon extends Equipment {
 		return;
 		}
 	int index =target.equipment_list.indexOf(this);
-	Weapon transfert = (Weapon) target.equipment_list.get(0);
-	target.equipment_list.add(0, this);
-	target.equipment_list.add(index, transfert);
+	//Weapon transfert = (Weapon) target.equipment_list.get(0);
+	Collections.swap(target.equipment_list, 0, index);
+	//target.equipment_list.add(0, this);
+	//target.equipment_list.add(index, transfert);
 	
 	System.out.println(super.getName()+" equiped");
+	
+	
 	}
 		
 		

@@ -11,13 +11,9 @@ public class Potion extends Equipment {
 	@Override
 	public void use(MainCharacter target) {
 
-		if (value == 0) {
-			System.out.println("This potion is empty");
-
-			return;
-		}
-
 		target.addHp(value);
+		target.equipment_list.remove(this);
+		
 		return;
 		
 	}

@@ -25,7 +25,8 @@ public class Room {
 	 * @param direction depends on the point where the player is coming from, it go from 0 to 3 (order similar to door)
 	 * @throws IOException 
 	 */
-	public Room (int a,int b,int direction,Dungeon d) throws IOException{ 
+	public Room (int a,int b,int direction,Dungeon d) throws IOException{
+		Main.set_avancement(Main.progression+5); 
 		int i;
 		x = a;
 		y = b;
@@ -85,14 +86,12 @@ public class Room {
 
 				
 	///////////////////////////// Content of the room
-		is_there_ennemy=generateBoolean(70);
-		is_there_chest=generateBoolean(40);
+		is_there_ennemy=generateBoolean(30);
+		is_there_chest=generateBoolean(60);
 		if(is_there_ennemy) {
 			ennemy=Generation.generateCharacter(this);
-			System.out.println("there is ennemy");
 		}
 		if(is_there_chest) {
-			System.out.println("there is chest");
 			chest = new Chest();
 		}
 		
@@ -100,17 +99,24 @@ public class Room {
 	}
 
 
-
+/**
+ * @return X position of the room
+ */
 	public int getX() {
 		return x;
 	}
 
-
+/**
+ * @return Y position of the room
+ */
 	public int getY() {
 		return y;
 	}
 
-
+/**
+ * @param i direction (1 = north, 2 = east, 3 = south, 4 = west)
+ * @return door that point this direction 
+ */
 	public boolean getDoor(int i) {
 		return Door[i];
 	}
@@ -136,21 +142,36 @@ public class Room {
 		
 	}
 
+	/**
+	 * @return true if there is a chest in this room
+	 */
 	public boolean getIs_there_chest() {
 		return is_there_chest;
 	}
-	
+	/**
+	 * @return true if there is an ennemy in this room
+	 */
 	public boolean getIs_there_ennemy() {
 		return is_there_ennemy;
 	}
 	
+	/**
+	 * @param define if there is an ennemy
+	 */
 	public void setIs_there_ennemy(boolean is_there_ennemy) {
 		this.is_there_ennemy = is_there_ennemy;
 	}
 	
+	/**
+	 * @param define if there is a chest NOT EMPTY
+	 */
 	public void setIs_there_chest(boolean is_there_chest) {
 		this.is_there_chest = is_there_chest;
 	}
+	/**
+	 * 
+	 * @return ennemy
+	 */
 	public Character getEnnemy() {
 		return ennemy;
 	}

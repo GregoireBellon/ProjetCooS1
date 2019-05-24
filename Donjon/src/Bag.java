@@ -23,9 +23,17 @@ public class Bag extends Equipment{
 		return out;
 	}
 	
+	
+	
 	@Override
 	public void use(MainCharacter target) {
 		boolean choice_correct=false;
+		
+		if(target.equipment_list.size()>size) {
+			System.out.println("This bag does't have enought space!");
+			return;
+		}
+		
 		while(!choice_correct) {
 			System.out.println("Do you want to equip "+super.getName()+ "(you will loose your old backpack) \n"
 					+ "yes/no");
@@ -34,7 +42,8 @@ public class Bag extends Equipment{
 			switch(anwser) {
 			case "yes":
 			target.actual_bag=this;
-			target.equipment_list.indexOf(this);
+			choice_correct=true;
+			break;
 			
 			}
 			

@@ -1,9 +1,18 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Class that power an entity (player or not)
+ * @author Gregoire 
+ *
+ */
 public class Character {
 
+	/**
+	 * Room where the character is
+	 */
 	public Room room;
+	
 	protected String name; 
 	protected int hp; //life
 	protected int hp_max; //max life
@@ -37,6 +46,10 @@ public class Character {
 		System.out.println(name+" : "+text); 
 	}
 
+	/**
+	 * return health point of the character
+	 * @return hp
+	 */
 	public int getHp() {
 		return hp;
 	}
@@ -79,7 +92,7 @@ public class Character {
 	}
 
 	/**
-	 * La fonction toString indique le nom du personnage, son nombre d'hp, d'hp max et une liste de son equipement
+	 * Display the Character's name, hps, hps max, and all the equipment
 	 */
 	@Override
 	public String toString() {
@@ -100,14 +113,27 @@ public class Character {
 		return line;
 	}
 	
-	public int fight(Character ennemy, int damages) throws IOException {
+	
+	/**
+	 * 
+	 * @param ennemy Character who attacks
+	 * @param damages Damages to this character
+	 * @return 0 = Character is dead
+	 * @throws IOException due to the character generation
+	 */
+	protected int fight(Character ennemy, int damages) throws IOException {
 		
 		place.GetRoom(Main.hero.getPositionX(), Main.hero.getPositionY()).setIs_there_ennemy(false);
 		//ennemy.room.setIs_there_ennemy(false); //if we fight : we win or die, so there is no more ennemy or no more hero (end)
 
+
+		Main.skipLines();
+		
 		hp=hp-ennemy.getUsingWeapon().pa;
 		
-		System.out.println("Dammage of the "+name+" : "+getUsingWeapon().pa);
+		System.out.println("You infliged "+damages+" to the "+name+" ! \n");
+		
+		System.out.println("The "+name+" could inflige you "+getUsingWeapon().pa);
 		System.out.println();
 		System.out.println();
 				
@@ -123,26 +149,41 @@ public class Character {
 	return 1;
 	}
 
-
+/**
+ * return name of the character
+ * @return name of the character
+ */
 	public String getName() {
 		return name;
 	}
 
-	
+	/**
+	 * return weapon that the character is using
+	 * @return weapon that the character is using
+	 */
 	public Weapon getUsingWeapon() {
 		return (Weapon) equipment_list.get(0);
 	}
 	
+	/**
+	 *return false if the character is dead 
+	 * @return is the character dead?
+	 */
 	public boolean isDead(){
 		return hp<=0;
 	}
 	
+	/**
+	 * Show the name of the character and print his life bar
+	 */
 	public void life() {
 		System.out.println(name+"'s life : "+hp);
 		printlifeBar();
 	}
 	
-	
+	/**
+	 * print the life bar of the character
+	 */
 	protected void printlifeBar() {
 		
 		System.out.println("max hp :"+hp_max);
@@ -162,19 +203,12 @@ public class Character {
 		
 	}
 	
-	public void equip(Equipment equip) {
-		equipment_list.add(equip); //add the equipment to the list
-	}
-	
-	public void checkInventory() {
-		int i =1;
-		for(Equipment extract:equipment_list) {
-			System.out.println(i+" : "+extract.toString());
-			i++;
-		}
-	}
-	
-	public int fightContext(Character ennemy) throws IOException {
+	/**
+	 * Handle the fight. Display if a character is dead
+	 * @param ennemy
+	 * @throws IOException
+	 */
+	public void fightContext(Character ennemy) throws IOException {
 	int result = this.fight(ennemy, 0);
 	System.out.println(result);
 	if(result==1) {
@@ -183,7 +217,7 @@ public class Character {
 	else System.out.println(ennemy.name+" defeated "+name);
 
 	
-	return result;
+	Main.hero.alive=false;
 	}
 
 	
