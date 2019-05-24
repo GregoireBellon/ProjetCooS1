@@ -1,11 +1,23 @@
 import java.util.Collections;
 
+/** 
+ * Entity used by a character that deals damages to an other one.
+ * 
+ * @author Grégoire
+ * @author Hugo
+ *
+ */
 public class Weapon extends Equipment {
 
+	/**
+	 * Define damages that an attack will deal
+	 */
 	protected int pa;
+	/**
+	 * define the chances that the player has to dodge when he's attacked with this weapon
+	 */
 	protected int precision; // precision of the weapon
-
-
+	
 	
 	/**
 	 * A weapon is instanced with a name and a set number of attack points
@@ -18,6 +30,10 @@ public class Weapon extends Equipment {
 		this.precision=precision;
 	}
 
+	/**
+	 * 
+	 * @return Attack points
+	 */
 	public int getPa() {
 		return pa;
 	}
@@ -27,7 +43,10 @@ public class Weapon extends Equipment {
 
 		return super.getName() + "  //  Damages :" + pa;
 	}
-
+/**
+ * 
+ * @return Precision of the weapon
+ */
 	public int getPrecision() {
 		return precision;
 	}
@@ -38,6 +57,12 @@ public class Weapon extends Equipment {
 		return super.getName();
 	}
 	
+	/**
+	 *Swap the first weapon (in position 0) with this one. This weapon become the one that the player use to hit ennemies
+	 * 
+	 * @param target player 
+	 * 
+	 */
 	@Override
 	public void use(MainCharacter target) {
 		if(target.equipment_list.get(0).equals(this)) {

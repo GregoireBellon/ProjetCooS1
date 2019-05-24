@@ -4,7 +4,13 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/**
+ * Run the game
+ * 
+ * @author Hugo Valadon
+ * @author Grégoire Bellon
+ *
+ */
 public class Main {
 	
 	/**

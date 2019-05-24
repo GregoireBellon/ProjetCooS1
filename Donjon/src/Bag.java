@@ -1,6 +1,14 @@
-
+/**
+ * Define the size of the player's inventory
+ * 
+ * @author Hugo Valadon
+ * @author Grégoire Bellon
+ *
+ */
 public class Bag extends Equipment{
-	
+	/**
+	 * number of items that a player can put in his inventory
+	 */
 	public int size; //size of the bag, how many object can fit in it
 	
 	/**
@@ -12,7 +20,9 @@ public class Bag extends Equipment{
 		super(name);
 		this.size=size;
 	}
-	
+	/**
+	 * return name and size in a String
+	 */
 	@Override
 	public String toString() {
 		
@@ -24,7 +34,9 @@ public class Bag extends Equipment{
 	}
 	
 	
-	
+	/**
+	 * replace the actual bag of the player with this one, which is removed of the player inventory
+	 */
 	@Override
 	public void use(MainCharacter target) {
 		boolean choice_correct=false;

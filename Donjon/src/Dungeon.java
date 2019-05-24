@@ -1,5 +1,11 @@
 import java.io.IOException;
-
+/**
+ * 
+ * @author Hugo
+ * 
+ * Contain all the rooms and allow to generate some
+ *
+ */
 public class Dungeon {
 	
 	Room map[][] = new Room[40][40];
@@ -27,11 +33,20 @@ public class Dungeon {
 			map[x][y] = new Room(x,y,direction,this);
 		}
 	}
-	
+	/**
+	 * 
+	 * @param x X coordinate of the room that we want to get
+	 * @param y Y coordinate of the room that we want to get
+	 * @return Room
+	 */
 	public Room GetRoom(int x,int y) {
 		return map[x][y];
 	}
 
+	/**
+	 * return the map, by a 2 dimensions array
+	 * @return Map
+	 */
 	public Room[][] getMap() {
 		return map;
 	}

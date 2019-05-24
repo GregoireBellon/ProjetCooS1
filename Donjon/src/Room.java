@@ -1,5 +1,9 @@
 import java.io.IOException;
-
+/**
+ * 
+ * @author Hugo Valadon
+ *
+ */
 public class Room {
 	
 	private int x;
