@@ -1,3 +1,4 @@
+import java.io.IOException;
 
 public class Dungeon {
 	
@@ -7,9 +8,10 @@ public class Dungeon {
 	 * When the dungeon get instanced, a first room is created at the x,y position
 	 * @param x first position value of the first room
 	 * @param y second position value of the first room
+	 * @throws IOException 
 	 */
-	Dungeon(int x,int y) {
-	GenerateRoom(x,y,5);
+	Dungeon(int x,int y)  {
+
 	
 	}
 	
@@ -18,8 +20,10 @@ public class Dungeon {
 	 * @param x first position value
 	 * @param y second position value
 	 * @param direction from which direction the player is coming from
+	 * @throws IOException 
 	 */
-	public void GenerateRoom(int x,int y,int direction) {
+	public void GenerateRoom(int x,int y,int direction) throws IOException {
+		System.out.println("GENERATING ROOM");
 		if (map[x][y] == null) {
 			map[x][y] = new Room(x,y,direction,this);
 		}

@@ -8,7 +8,8 @@ public class Potion extends Equipment {
 		this.value = value;
 	}
 
-	public void drink(Character target) {
+	@Override
+	public void use(MainCharacter target) {
 
 		if (value == 0) {
 			System.out.println("This potion is empty");
@@ -28,5 +29,7 @@ public class Potion extends Equipment {
 		
 		return out;
 	}
+	
+	
 
 }

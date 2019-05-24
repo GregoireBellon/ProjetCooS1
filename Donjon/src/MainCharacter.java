@@ -1,10 +1,11 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class MainCharacter extends Character {
 
-	protected Bag actual_bag = new Bag("Litle bag", 5);
+	public Bag actual_bag; 
 	Scanner sc = new Scanner(System.in);
 
 	/**
@@ -14,12 +15,13 @@ public class MainCharacter extends Character {
 
 	
 	
-	public MainCharacter(String name, int[] Position, Weapon weapon, Dungeon place) {
+	public MainCharacter(String name, int[] Position, Weapon weapon, Dungeon place, Room room) {
 		super(name, 100, weapon, place);
-		hp_max = 100;
+		super.hp_max = 100;
 		this.Position[0] = Position[0];
 		this.Position[1] = Position[1];
-
+		actual_bag = new Bag("Litle bag", 5);
+		
 	}
 
 	/**
@@ -34,7 +36,7 @@ public class MainCharacter extends Character {
 	}
 
 	@Override
-	public int fight(Character ennemy, int damages) {
+	public int fight(Character ennemy, int damages) throws IOException {
 		boolean active_choice=false;
 		ennemy.life();
 		life();
@@ -75,8 +77,9 @@ public class MainCharacter extends Character {
 	 * Make the character move inside of a dungeon, in a specific direction (0 = north, 1 = east, 2 = south, 3 = west)
 	 * @param place The dungeon, it need to be specified in order to generate new room
 	 * @param direction The direction of the character while he is moving
+	 * @throws IOException 
 	 */
-	public void move(Dungeon place, int direction){
+	public void move(Dungeon place, int direction) throws IOException{
 		switch(direction) {
 		case 0 :
 			this.Position[1]--;
@@ -120,6 +123,10 @@ public class MainCharacter extends Character {
 		System.out.println("Your life : " + hp);
 		super.printlifeBar();
 
+	}
+	
+	public void eraseEquipment() {
+		
 	}
 	
 

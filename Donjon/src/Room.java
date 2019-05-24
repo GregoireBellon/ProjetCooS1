@@ -1,3 +1,4 @@
+import java.io.IOException;
 
 public class Room {
 	
@@ -22,8 +23,9 @@ public class Room {
 	 * @param a is the x position of the new room
 	 * @param b is the y position of the new room
 	 * @param direction depends on the point where the player is coming from, it go from 0 to 3 (order similar to door)
+	 * @throws IOException 
 	 */
-	public Room (int a,int b,int direction,Dungeon d){ 
+	public Room (int a,int b,int direction,Dungeon d) throws IOException{ 
 		int i;
 		x = a;
 		y = b;
@@ -83,9 +85,15 @@ public class Room {
 
 				
 	///////////////////////////// Content of the room
-		is_there_ennemy=generateBoolean(15);
+		is_there_ennemy=generateBoolean(70);
+		is_there_chest=generateBoolean(40);
 		if(is_there_ennemy) {
-			//Ennemy=Generation.generate_ennemy();//à coder_
+			ennemy=Generation.generateCharacter(this);
+			System.out.println("there is ennemy");
+		}
+		if(is_there_chest) {
+			System.out.println("there is chest");
+			chest = new Chest();
 		}
 		
 		
@@ -106,6 +114,10 @@ public class Room {
 	public boolean getDoor(int i) {
 		return Door[i];
 	}
+	
+	public Chest getChest() {
+		return chest;
+	}
 
 	
 	/**
@@ -113,16 +125,33 @@ public class Room {
 	 * @param chances chances that the boolean is true, between 1 and 100
 	 * @return
 	 */
-	private boolean generateBoolean(int chances) {
+	public static boolean generateBoolean(int chances) {
 
-		double alea = Math.random();
+		double alea = Math.random()*100;
 		
-		if(alea>=chances) {
+		if(alea<=chances) {
 			return true;
 		}
 		return false;
 		
 	}
 
+	public boolean getIs_there_chest() {
+		return is_there_chest;
+	}
 	
+	public boolean getIs_there_ennemy() {
+		return is_there_ennemy;
+	}
+	
+	public void setIs_there_ennemy(boolean is_there_ennemy) {
+		this.is_there_ennemy = is_there_ennemy;
+	}
+	
+	public void setIs_there_chest(boolean is_there_chest) {
+		this.is_there_chest = is_there_chest;
+	}
+	public Character getEnnemy() {
+		return ennemy;
+	}
 }

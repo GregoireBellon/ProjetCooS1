@@ -1,7 +1,9 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Character {
 
+	public Room room;
 	protected String name; 
 	protected int hp; //life
 	protected int hp_max; //max life
@@ -98,7 +100,11 @@ public class Character {
 		return line;
 	}
 	
-	public int fight(Character ennemy, int damages) {
+	public int fight(Character ennemy, int damages) throws IOException {
+		
+		place.GetRoom(Main.hero.getPositionX(), Main.hero.getPositionY()).setIs_there_ennemy(false);
+		//ennemy.room.setIs_there_ennemy(false); //if we fight : we win or die, so there is no more ennemy or no more hero (end)
+
 		hp=hp-ennemy.getUsingWeapon().pa;
 		
 		System.out.println("Dammage of the "+name+" : "+getUsingWeapon().pa);
@@ -168,7 +174,7 @@ public class Character {
 		}
 	}
 	
-	public int fightContext(Character ennemy) {
+	public int fightContext(Character ennemy) throws IOException {
 	int result = this.fight(ennemy, 0);
 	System.out.println(result);
 	if(result==1) {

@@ -13,6 +13,11 @@ public class Equipment {
 	
 	}
 	
+	public void use(MainCharacter target) {
+		
+		return;
+	}
+	
 	public void equip(MainCharacter c) {
 		if(c.canAddEquipement()) {
 			equip((Character)c);

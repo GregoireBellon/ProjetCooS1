@@ -1,7 +1,7 @@
 
 public class Bag extends Equipment{
 	
-	protected int size; //size of the bag, how many object can fit in it
+	public int size; //size of the bag, how many object can fit in it
 	
 	/**
 	 * A bag is instanced with a name and a max number of item
@@ -21,6 +21,24 @@ public class Bag extends Equipment{
 		out = super.getName()+" : "+size+" slots";
 		
 		return out;
+	}
+	
+	@Override
+	public void use(MainCharacter target) {
+		boolean choice_correct=false;
+		while(!choice_correct) {
+			System.out.println("Do you want to equip "+super.getName()+ "(you will loose your old backpack) \n"
+					+ "yes/no");
+			
+			String anwser = ScannerEntry.getString();
+			switch(anwser) {
+			case "yes":
+			target.actual_bag=this;
+			target.equipment_list.indexOf(this);
+			
+			}
+			
+		}
 	}
 	
 }

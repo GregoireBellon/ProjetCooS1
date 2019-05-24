@@ -21,7 +21,6 @@ public class Weapon extends Equipment {
 		return pa;
 	}
 
-
 	@Override
 	public String toString() {
 
@@ -37,5 +36,21 @@ public class Weapon extends Equipment {
 		// TODO Auto-generated method stub
 		return super.getName();
 	}
-
-}
+	
+	@Override
+	public void use(MainCharacter target) {
+		if(target.equipment_list.get(0).equals(this)) {
+			System.out.println("This weapon is already equiped !");
+		return;
+		}
+	int index =target.equipment_list.indexOf(this);
+	Weapon transfert = (Weapon) target.equipment_list.get(0);
+	target.equipment_list.add(0, this);
+	target.equipment_list.add(index, transfert);
+	
+	System.out.println(super.getName()+" equiped");
+	}
+		
+		
+	}
+	
